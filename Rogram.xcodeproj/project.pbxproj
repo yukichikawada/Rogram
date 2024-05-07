@@ -14,6 +14,11 @@
 		89535CFA2BEA88D1009820A1 /* RogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89535CF92BEA88D1009820A1 /* RogramTests.swift */; };
 		89535D042BEA88D1009820A1 /* RogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89535D032BEA88D1009820A1 /* RogramUITests.swift */; };
 		89535D062BEA88D1009820A1 /* RogramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89535D052BEA88D1009820A1 /* RogramUITestsLaunchTests.swift */; };
+		89535D172BEA8D34009820A1 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89535D162BEA8D34009820A1 /* Photo.swift */; };
+		89535D192BEA8D40009820A1 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89535D182BEA8D40009820A1 /* FeedView.swift */; };
+		89535D1B2BEA8D59009820A1 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89535D1A2BEA8D59009820A1 /* PhotoDetailView.swift */; };
+		89535D1E2BEA8E8B009820A1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89535D1D2BEA8E8B009820A1 /* FeedViewModel.swift */; };
+		895BC3842BEA995E00001380 /* FeedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895BC3832BEA995E00001380 /* FeedItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		89535CFF2BEA88D1009820A1 /* RogramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89535D032BEA88D1009820A1 /* RogramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITests.swift; sourceTree = "<group>"; };
 		89535D052BEA88D1009820A1 /* RogramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89535D162BEA8D34009820A1 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		89535D182BEA8D40009820A1 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		89535D1A2BEA8D59009820A1 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		89535D1D2BEA8E8B009820A1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		895BC3832BEA995E00001380 /* FeedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,9 @@
 		89535CE72BEA88CF009820A1 /* Rogram */ = {
 			isa = PBXGroup;
 			children = (
+				89535D1C2BEA8E6E009820A1 /* ViewModels */,
+				89535D152BEA8D03009820A1 /* Views */,
+				89535D142BEA8CFA009820A1 /* Models */,
 				89535CE82BEA88CF009820A1 /* RogramApp.swift */,
 				89535CEA2BEA88CF009820A1 /* ContentView.swift */,
 				89535CEC2BEA88D1009820A1 /* Assets.xcassets */,
@@ -125,6 +138,32 @@
 				89535D052BEA88D1009820A1 /* RogramUITestsLaunchTests.swift */,
 			);
 			path = RogramUITests;
+			sourceTree = "<group>";
+		};
+		89535D142BEA8CFA009820A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89535D162BEA8D34009820A1 /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89535D152BEA8D03009820A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89535D182BEA8D40009820A1 /* FeedView.swift */,
+				89535D1A2BEA8D59009820A1 /* PhotoDetailView.swift */,
+				895BC3832BEA995E00001380 /* FeedItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89535D1C2BEA8E6E009820A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				89535D1D2BEA8E8B009820A1 /* FeedViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895BC3842BEA995E00001380 /* FeedItemView.swift in Sources */,
+				89535D192BEA8D40009820A1 /* FeedView.swift in Sources */,
+				89535D172BEA8D34009820A1 /* Photo.swift in Sources */,
+				89535D1E2BEA8E8B009820A1 /* FeedViewModel.swift in Sources */,
 				89535CEB2BEA88CF009820A1 /* ContentView.swift in Sources */,
+				89535D1B2BEA8D59009820A1 /* PhotoDetailView.swift in Sources */,
 				89535CE92BEA88CF009820A1 /* RogramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
